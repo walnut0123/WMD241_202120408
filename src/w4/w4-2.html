@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4주차 두번째</title>
+
+    <!--*{}은 이하 나오는 모든 것에 대한 정의-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      div {
+        font-size: 18px;
+        background-color: burlywood;
+        margin-block: 10px 40px;
+        padding-inline: 24px;
+        padding-block: 36px 24px;
+        border: 10px solid #0022aa;
+        width: 400px;
+      }
+      .border-box {
+        box-sizing: border-box;
+      }
+    </style>
+    <!--html에 메모 하는 법-->
+    <!--box content: width를 잡으면 영역이 생기는데, padding border의 테두리로 인한 디자인 이슈가 문제가 됨.
+    따라서 이에 맞춘 옵션. 보통 border는 영역 밖으로 계산해줌(figma). 근데 web기준에선 border가 안쪽 계산-->
+  </head>
+  <body>
+    <div class="border-box">
+      <!--태그에 이름을 다는 법 2가지 class를 통한 방법, id를 통한 방법, id는 중복되지 아니하고 class는 종속된 하나의 그룹 형태.-->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint
+      consequuntur quibusdam hic, voluptatem dignissimos nobis mollitia nihil
+      excepturi est aliquid explicabo repellendus maiores aperiam ipsa,
+      laboriosam nesciunt facilis animi?
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint
+      consequuntur quibusdam hic, voluptatem dignissimos nobis mollitia nihil
+      excepturi est aliquid explicabo repellendus maiores aperiam ipsa,
+      laboriosam nesciunt facilis animi?
+    </div>
+  </body>
+</html>
