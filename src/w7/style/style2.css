@@ -7,11 +7,11 @@
 }
 
 * {
+  max-width: 100%;
   box-sizing: border-box;
 }
 
 body {
-  max-width: 100%;
   font-family: "pretendard", "san-serif";
   margin: 0;
   background-color: #191a1b;
@@ -46,10 +46,9 @@ body {
   height: 32px;
 }
 .up0_abstract {
-  margin-top: 4px;
   font-size: 23px;
   margin-left: 6px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .up0_help_center {
   margin: 2px 0px 0px 11.5px;
@@ -68,9 +67,10 @@ body {
   align-items: center;
   width: 230.67px;
   height: 49.33px;
-  padding: 6px 22px;
+  padding: 6px 20px;
   border: 1px solid #fff;
   border-radius: 8px;
+  background-color: #191a1b;
 }
 .up0_sign_in {
   display: flex;
@@ -79,7 +79,7 @@ body {
   width: 140px;
   height: 49.33px;
   margin-left: 16px;
-  padding: 6px 32px;
+  padding: 6px 30px;
   border-radius: 8px;
   background-color: #4c5fd5;
   font-size: 24px;
