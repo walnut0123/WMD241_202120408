@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
+  font-size: 23px;
   color: #fff;
 }
 .up0_left_box {
@@ -50,10 +50,16 @@ body {
   margin-left: 6px;
   font-weight: 600;
 }
+.up0_abstract:hover {
+  color: #bdbdbd;
+}
 .up0_help_center {
   margin: 2px 0px 0px 11.5px;
   border-left: 2px solid #fff;
   padding-left: 12.8px;
+}
+.up0_help_center:hover {
+  text-decoration: underline;
 }
 
 .up0_right_box {
@@ -81,9 +87,14 @@ body {
   margin-left: 16px;
   padding: 6px 30px;
   border-radius: 8px;
+  border: 0px;
   background-color: #4c5fd5;
   font-size: 24px;
   color: #fff;
+}
+.up0_sign_in:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .up1 {
@@ -119,6 +130,13 @@ body {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   padding: 16px;
 }
+.up1_content2:hover {
+  border: 1px solid #4c5fd5;
+}
+/* .up1_content2_box{
+ 마우스 오버 아이콘 변경 실패
+} */
+
 .up1_content2_search {
   color: #999999;
   font-size: 20px;
@@ -182,7 +200,9 @@ body {
   color: #4c5fd5;
   font-size: 20px;
 }
-
+.up2_content1_box_letter3:hover {
+  text-decoration: underline #4c5fd5;
+}
 .up3 {
   width: 1690.67px;
   height: 402px;
@@ -197,6 +217,9 @@ body {
   height: 342px;
   margin: 0px 81.5417px 0px 81.5312px;
   /* padding: 0px 0px 100px; */
+}
+.footer_hover:hover {
+  text-decoration: underline #fff;
 }
 .up3_footer_content {
   display: flex;
