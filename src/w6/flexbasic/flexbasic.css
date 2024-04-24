@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: aqua;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+.container {
+  background-color: rgb(231, 199, 188);
+  border: 1px solid #000000;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.children {
+  border: 1px solid #f00;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+}

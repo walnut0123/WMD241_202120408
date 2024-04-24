@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.container {
+  max-width: 50rem;
+  margin-inline: auto;
+  background-color: oklch(90% 0 00);
+  padding-inline: 40px;
+}
+
+.container > div {
+  padding: 16px;
+}
+.container > div:nth-child(1) {
+  background-color: oklch(90% 0.05 0);
+  border: 0.0625rem dotted oklch(40% 0.05 0);
+  color: oklch(20% 0.05 0);
+}
+.container > div:nth-child(2) {
+  background-color: oklch(90% 0.05 40);
+  border: 0.0625rem dotted oklch(40% 0.05 40);
+  color: oklch(20% 0.05 40);
+}
+.container > div:nth-child(3) {
+  background-color: oklch(90% 0.05 80);
+  border: 0.0625rem dotted oklch(40% 0.05 80);
+  color: oklch(20% 0.05 80);
+}
+.container > div:nth-child(4) {
+  background-color: oklch(90% 0.05 120);
+  border: 0.0625rem dotted oklch(40% 0.05 120);
+  color: oklch(20% 0.05 120);
+}
+.container > div:nth-child(5) {
+  background-color: oklch(90% 0.05 160);
+  border: 0.0625rem dotted oklch(40% 0.05 160);
+  color: oklch(20% 0.05 160);
+}
+
+.flex-container {
+  display: flex;
+  /*부모에 의해 자식이 크기를 조정하는 특성이 있음*/
+}
+
+.flex-child-opt-1 {
+  flex-grow: 1;
+}
+
+.flex-child-opt-2 {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.flex-container-opt-1 {
+  /*gap: 16px;*/
+  column-gap: 16px;
+  row-gap: 24px;
+}
+
+.flex-container-opt-2 {
+  /* justify-content: space-evenly; 1대1대1대1 */
+  justify-content: space-around;
+}
+
+.flex-container-opt-3 {
+  align-items: start;
+}
+
+.flex-container-opt-4 {
+  gap: 16px; /*개체 테두리 padding*/
+  width: 7.5rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap; /* nowrap이 기본값 */
+}
+
+.flex-wrap-opt-1 {
+  column-gap: 0.75rem;
+  row-gap: 1, 5rem;
+}
+.flex-wrap-opt-1 > * {
+  flex-grow: 1;
+}
