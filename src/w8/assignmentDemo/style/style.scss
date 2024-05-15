@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.navigation {
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+  padding-inline: 1.875rem;
+  padding-block: 1.1875rem;
+  &__container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu-group {
+    display: flex;
+    align-items: center;
+    &--left {
+      gap: 0.8125rem;
+    }
+    &__right {
+      gap: 16px;
+      @media (width<900px) {
+        display: flex;
+      }
+    }
+  }
+  &__page-title {
+    margin-top: 3px;
+    padding-top: 3px;
+    padding-left: 0.8125rem;
+    line-height: 1.4375rem;
+    border-left: 0.125rem solid #fff;
+  }
+  &__logo {
+    height: 32px;
+    aspect-ratio: 200 / 51;
+  }
+  &__btn {
+    padding-inline: 23px;
+    padding-block: 8px;
+    line-height: 36px;
+    border-radius: 8px;
+
+    &__outline {
+      border: 1px solid #fff;
+      background-color: #191a1b;
+    }
+    &__fill {
+    }
+  }
+}
+
+.hero {
+  background-color: #dadbee;
+  padding-inline: 1.875rem;
+  padding: 5rem 7.1875rem;
+  &__container {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 7.5rem;
+  }
+  &__search-input {
+    display: block;
+    width: 80%;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #000;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-inline: auto;
+  }
+}
+.feature {
+  padding: 30px;
+  &__container {
+    column-gap: 15px;
+    width: 80%;
+    margin-inline: auto;
+    // list-style: ;
+    padding-left: 0;
+    margin-block: 0;
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 400px;
+    }
+  }
+}
+.card {
+  display: flex;
+  gap: 30px;
+  padding-top: 48px;
+  &__area {
+    &__left {
+    }
+    &__right {
+    }
+  }
+  &__img {
+    max-width: 80px;
+  }
+  &__title {
+  }
+  &__desc {
+  }
+  &__more {
+  }
+}

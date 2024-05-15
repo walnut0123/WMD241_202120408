@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  background-color: oklch(0.2 0 0);
+  font-size: 1.125rem;
+}
+
+.container {
+  display: grid;
+  max-width: 64rem;
+  padding: 0.75rem;
+  background-color: oklch(0.5 0 0);
+  margin-inline: auto;
+  gap: 1.5rem;
+}
